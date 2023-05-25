@@ -28,7 +28,7 @@ else
     read x
     if [ $x == "y" ]; then
         if [[ "$file" == *.cpp ]]; then
-            echo -e '#include "std_lib_facilities.h"\n\n\nint main(){\n\t\n\treturn 0;\n}' > $file
+            echo -e '#include <bits/stdc++.h>\nusing namespace std;\n\n\nint main(){\n\t\n\treturn 0;\n}' > $file
         else
             if [[ "$file" == *.c ]]; then
                 echo -e "#include <stdio.h>\n#include <ctype.h>\n#include <math.h>\n int main(){\n\nreturn 0;\n}" > $file
